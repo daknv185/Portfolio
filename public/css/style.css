@@ -1,86 +1,154 @@
 @charset "UTF-8";
 
 html {
-  font-size: 100%;
+	font-size: 100%;
 }
+
 body {
-  color: #24292e;
+	padding: 10px;
+	color: #24292e;
 }
+
 a {
-  text-decoration: none;
+	text-decoration: none;
 }
+
 img {
-  max-width: 100%;
+	max-width: 100%;
 }
+
 li {
-  list-style: none;
+	list-style: none;
 }
 
 .wrapper {
-  max-width: 1080px;
-  margin: 0 auto 130px auto;
-  font-size: 0.9rem;
-  padding: 0 4%;
+	max-width: 1080px;
+	margin: 0 auto 130px auto;
+	font-size: 0.9rem;
+	padding: 0 4%;
 }
+
 .site-title {
-  line-height: 1px;
+	line-height: 1px;
 }
+
 .site-title a {
-  display: block;
+	display: block;
 }
+
 .sec-title {
 
-  text-align: center;
-  margin-bottom: 55px;
+	text-align: center;
+	margin-bottom: 55px;
 }
 
 .about {
 
-  text-align: center;
-  margin-bottom: 250px;
-  margin-left: 19px;
+	text-align: center;
+	margin-bottom: 250px;
+	margin-left: 19px;
 }
 
-.parent {
-  display: flex;
-  justify-content: start;   
-  align-items: center;       
-  height: 300px;             
-  background: #eee;
+.discription {
+	display: flex;
+	justify-content: start;
+	align-items: center;
+	height: 300px;
+	background: #eee;
 }
 
 .parent p {
-  margin: 0; 
+	margin: 0;
 }
+
+/*
+otamesi
+*/
+
+#headerr {
+  position: fixed;   /* 固定 */
+  top: 0;
+  left: 50%;         /* 横中央に固定 */
+  transform: translateX(-50%);
+  width: 100%;
+  background-color: #fff;
+  box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+  z-index: 1000;
+}
+
+.header-inner {
+  max-width: 960px;      /* ヘッダーの最大幅 */
+  width: 100%;
+  display: flex;
+  justify-content: flex-end;  
+  align-items: center;
+  padding: 10px 20px;
+  box-sizing: border-box;
+}
+
+/* ロゴ */
+.logo {
+  font-size: 24px;
+  font-weight: bold;
+}
+
+/* メニュー */
+.nav {
+  display: flex;
+  gap: 20px;
+}
+
+.nav a {
+  text-decoration: none;
+  color: #333;
+}
+
+.nav ul {
+  display: flex;      /* 横並びにする */
+  gap: 20px;          /* li 同士の間隔 */
+  list-style: none;   /* デフォルトの黒丸を消す */
+  margin: 0;
+  padding: 0;
+}
+
+.nav a {
+  text-decoration: none;
+  color: #333;
+}
+
 
 
 /*-------------------------------------------
 ヘッダー
 -------------------------------------------*/
 #header {
-  max-width: 960px;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  margin: 0 auto;
-  padding: 0 4%;
+	max-width: 960px;
+	display: ruby;
+	align-items: center;
+	position: fixed;
+	background-color: ghostwhite;
 }
+
 #header ul {
-  display: flex;
-  padding: 10px 0;
+	display: ruby;
+	padding: 10px 0;
 }
+
 #header li {
-  font-size: 0.9rem;
-  margin-left: 30px;
+	font-size: 0.9rem;
+	margin-left: 30px;
 }
+
 #header li a {
-  color: #24292e;
+	color: #24292e;
 }
+
 #header li a:hover {
-  opacity: 0.7;
+	opacity: 0.7;
 }
+
 #header li img.icon {
-  width: 20px;
+	width: 20px;
 }
 
 /*-------------------------------------------
@@ -91,179 +159,209 @@ Mainvisual
 }
 
 #mainvisual {
-  margin-bottom: 80px;
+	margin-bottom: 80px;
+
 }
+
 #mainvisual img {
-  width: 100%;
-  max-width: 1920px;
-  height: 420px;
-  object-fit: cover;
+	width: 100%;
+	max-width: 1920px;
+	height: 420px;
+	object-fit: cover;
+}
+
+/*-------------------------------------------
+Main
+-------------------------------------------*/
+
+#main{
+	padding: 70px 0 0;
 }
 
 /*-------------------------------------------
 About
 -------------------------------------------*/
 #about ul {
-  margin-bottom: 70px;
-    text-align:end;
+	margin-bottom: 70px;
+	text-align: end;
 }
+
 #about li:first-child {
-  margin-bottom: 30px;
+	margin-bottom: 30px;
 }
+
 #about p {
-  text-align:justify;
+	text-align: justify;
 }
 
 /*-------------------------------------------
 Works
 -------------------------------------------*/
 #works ul {
-  display: flex;
-  justify-content: center;
-  flex-wrap: wrap;
-  margin-bottom: 50px;
+	display: flex;
+	justify-content: center;
+	flex-wrap: wrap;
+	margin-bottom: 50px;
 }
+
 #works li {
-  width: 31%;
-  margin-bottom: 23px;
+	width: 31%;
+	margin-bottom: 23px;
 }
 
 /*-------------------------------------------
 Work Experience
 -------------------------------------------*/
 #WorkExperience dl {
-  display: flex;
-  flex-wrap: wrap;
-  border-top: solid 1px #c8c8c8;
-  margin-bottom: 20px;
+	display: flex;
+	flex-wrap: wrap;
+	border-top: solid 1px #c8c8c8;
+	margin-bottom: 20px;
 }
+
 #WorkExperience dt {
-  width: 20%;
-  border-bottom: solid 1px #c8c8c8;
-  padding: 15px;
+	width: 20%;
+	padding: 15px;
 }
+
 #WorkExperience dd {
-  width: 80%;
-  border-bottom: solid 1px #c8c8c8;
-  padding: 15px;
+	width: 80%;
+	border-bottom: solid 1px #c8c8c8;
+	padding: 15px 15px 15px 80px;
 }
 
 /*-------------------------------------------
 Contact
 -------------------------------------------*/
 #contact dl {
-  display: flex;
-  flex-wrap: wrap;
-  margin-bottom: 20px;
+	display: flex;
+	flex-wrap: wrap;
+	margin-bottom: 20px;
 }
+
 #contact dt {
-  width: 15%;
+	width: 15%;
 }
+
 #contact dd {
-  width: 85%;
-  margin-bottom: 10px;
+	width: 85%;
+	margin-bottom: 10px;
 }
+
 #contact dd input,
 #contact dd textarea {
-  width: 100%;
-  border: solid 1px #c8c8c8;
-  padding: 10px;
+	width: 100%;
+	border: solid 1px #c8c8c8;
+	padding: 10px;
 }
+
 #contact dd textarea {
-  height: 10rem;
+	height: 10rem;
 }
+
 #contact .button {
-  text-align: center;
+	text-align: center;
 }
+
 #contact .button input {
-  width: 200px;
-  background-color: #24292e;
-  color: #fff;
-  padding: 15px 0;
-  border: solid 1px #24292e;
+	width: 200px;
+	background-color: #24292e;
+	color: #fff;
+	padding: 15px 0;
+	border: solid 1px #24292e;
 }
+
 #contact .button input:hover {
-  background: #fff;
-  color: #24292e;
+	background: #fff;
+	color: #24292e;
 }
 
 /*-------------------------------------------
 フッター
 -------------------------------------------*/
 #footer {
-  background-color: #24292e;
-  color: #fff;
-  font-size: 0.5rem;
-  padding: 10px 20px;
-  text-align: center;
+	background-color: #24292e;
+	color: #fff;
+	font-size: 0.5rem;
+	padding: 10px 20px;
+	text-align: center;
 }
 
 /*-------------------------------------------
 SP
 -------------------------------------------*/
 @media screen and (max-width: 600px) {
-  .wrapper {
-    margin-bottom: 70px;
-  }
-  .site-title {
-    margin-top: 20px;
-  }
-  .sec-title {
-    margin-bottom: 40px;
-  }
+	.wrapper {
+		margin-bottom: 70px;
+	}
 
-  /*-------------------------------------------
+	.site-title {
+		margin-top: 20px;
+	}
+
+	.sec-title {
+		margin-bottom: 40px;
+	}
+
+	/*-------------------------------------------
   ヘッダー
   -------------------------------------------*/
-  #header {
-    max-width: 100%;
-    height: auto;
-    flex-direction: column;
-  }
-  #header li {
-    font-size: 0.8rem;
-    margin-left: 20px;
-  }
-  #header li:first-child {
-    margin-left: 0;
-  }
+	#header {
+		max-width: 100%;
+		height: auto;
+		flex-direction: column;
+	}
 
-  /*-------------------------------------------
+	#header li {
+		font-size: 0.8rem;
+		margin-left: 20px;
+	}
+
+	#header li:first-child {
+		margin-left: 0;
+	}
+
+	/*-------------------------------------------
   Works
   -------------------------------------------*/
-  #works ul {
-    flex-direction: column;
-  }
-  #works li {
-    width: 100%;
-  }
+	#works ul {
+		flex-direction: column;
+	}
 
-  /*-------------------------------------------
+	#works li {
+		width: 100%;
+	}
+
+	/*-------------------------------------------
   Work Experience
   -------------------------------------------*/
-  #WorkExperience dl {
-    flex-direction: column;
-  }
-  #WorkExperience dt {
-    width: 100%;
-    border-bottom: none;
-    padding-bottom: 0;
-  }
-  #WorkExperience dd {
-    width: 100%;
-    padding-top: 0;
-  }
+	#WorkExperience dl {
+		flex-direction: column;
+	}
 
-  /*-------------------------------------------
+	#WorkExperience dt {
+		width: 100%;
+		border-bottom: none;
+		padding-bottom: 0;
+	}
+
+	#WorkExperience dd {
+		width: 100%;
+		padding-top: 0;
+	}
+
+	/*-------------------------------------------
   Contact
   -------------------------------------------*/
-  #contact dl {
-    flex-direction: column;
-  }
-  #contact dt {
-    width: 100%;
-  }
-  #contact dd {
-    width: 100%;
-  }
+	#contact dl {
+		flex-direction: column;
+	}
+
+	#contact dt {
+		width: 100%;
+	}
+
+	#contact dd {
+		width: 100%;
+	}
 }
