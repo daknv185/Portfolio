@@ -61,11 +61,10 @@ li {
 	margin: 0;
 }
 
-/*
-otamesi
-*/
-
-#headerr {
+/*-------------------------------------------
+ヘッダー
+-------------------------------------------*/
+#header {
 	position: fixed;
 	/* 固定 */
 	top: 0;
@@ -119,40 +118,6 @@ otamesi
 	color: #333;
 }
 
-
-
-/*-------------------------------------------
-ヘッダー
--------------------------------------------*/
-#header {
-	max-width: 960px;
-	display: ruby;
-	align-items: center;
-	position: fixed;
-	background-color: ghostwhite;
-}
-
-#header ul {
-	display: ruby;
-	padding: 10px 0;
-}
-
-#header li {
-	font-size: 0.9rem;
-	margin-left: 30px;
-}
-
-#header li a {
-	color: #24292e;
-}
-
-#header li a:hover {
-	opacity: 0.7;
-}
-
-#header li img.icon {
-	width: 20px;
-}
 
 /*-------------------------------------------
 Mainvisual
