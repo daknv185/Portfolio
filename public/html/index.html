@@ -1,75 +1,105 @@
 <!DOCTYPE html>
 <html lang="ja">
- 	<head>
-		<meta charset="utf-8">
-		<title>WCB cafe</title>
-		<meta name="description" content="ブレンドコーヒーとヘルシーなオーガニックフードを提供するカフェ">
-		<meta name="viewport" content="width=device-width, initial-scale=1">
-		<!--ファビコン-->
-		<link rel="icon" type="image/png" href="images/favicon.png">
-		
-		<!--リセットCSS-->
-		<link rel="stylesheet" href="https://unpkg.com/ress/dist/ress.min.css">
-		
-		<!--Googleフォント-->
-		<link rel="preconnect" href="https://fonts.googleapis.com">
-		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-		<link href="https://fonts.googleapis.com/css2?family=Philosopher&display=swap" rel="stylesheet">
-		
-		<!--オリジナルCSS-->
-		<link rel="stylesheet" href="/public/css/style.css">
-    </head>
-    
-    	<body>
-			<div class="cover cover-home">
-				<header class="page-header wrapper">
-       				<h1 class="align-center">
-		   				<a href="index.html"><img class="logo" src="images/logo.svg" alt="WCBカフェ ホーム"></a>
-       				</h1>
-       				<nav>
-					   	<ul class="main-nav font-english">
-						   	<li><a href="news.html">News</a></li>
-						   	<li><a href="menu.html">Menu</a></li>
-						  	 <li><a href="contact.html">Contact</a></li>
-					 	  </ul>
-       				</nav>
-				</header>
-				<h2 class="page-title font-english">We'll Make Your Day</h2>
-			</div>
-			
-			<section class="about">
-				<h3 class="heading-large font-english">About Cafe</h3>
-				<p>
-					WCB CAFEは無添加の厳選食材とおしゃれな店内が魅力のカフェです。心と体に優しい、それでいて飽きのこない空間をご用意しています。
-					素材の本来の美味しさを引き出したメニューを楽しみながら、癒しの時間をお過ごしください。
-				</p>
-				<div class="align-center">
-					<a class="btn" href="menu.html">メニューを見る</a>
-				</div>
-			</section>
-			<footer class="page-footer">
-				<h3 class="heading-large font-english">Information</h3>
-				<table class="info">
-					<tr>
-						<th>住所</th>
-						<td>東京都港区六本木0-0○○○</td>
-					</tr>
-					<tr>
-						<th>電話</th>
-						<td>03-1111-xxxx</td>
-					</tr>
-					<tr>
-						<th>営業時間</th>
-						<td>10:00 ～ 20:00</td>
-					</tr>
-					<tr>
-						<th>店休日</th>
-						<td>水曜</td>
-					</tr>
-				</table>
-				<div class="copyright">
-					<small>&copy; 2010 WCB Cafe</small>
-				</div>
-			</footer>
-    </body>
+  <head>
+    <meta charset="utf-8">
+    <title>My Work - Portfolio</title>
+    <meta name="description" content="テキストテキストテキストテキストテキストテキストテキストテキスト">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="icon" href="img/favicon.ico">
+    <link rel="stylesheet" href="https://unpkg.com/ress/dist/ress.min.css">
+    <link rel="stylesheet" href="css/style.css">
+  </head>
+
+  <body>
+    <header id="header">
+      <h1 class="site-title"><a href="index.html"><img src="img/logo.svg" alt="My Work"></a></h1>
+      <nav>
+        <ul>
+          <li><a href="#about">About</a></li>
+          <li><a href="#works">Works</a></li>
+          <li><a href="#news">News</a></li>
+          <li><a href="#contact">Contact</a></li>
+          <li>
+            <a href="https://www.instagram.com/" target="_blank">
+              <img class="icon" src="./img/icon-instagram.png" alt="インスタグラム">
+            </a>
+          </li>
+        </ul>
+      </nav>
+    </header>
+
+    <main>
+      <div id="mainvisual">
+        <picture>
+          <source media="(max-width: 600px)" srcset="img/mainvisual-sp.jpg">
+          <img src="img/mainvisual-pc.jpg" alt="テキストテキストテキスト">
+        </picture>
+      </div>
+
+      <section id="about" class="wrapper">
+        <h2 class="sec-title">About</h2>
+        <ul>
+          <li>Xxxxx Ashley</li>
+          <li>2th Floor xxxxx Building x-x-x Nishiazabu, Minato-ku, Tokyo 106-0031 Japan</li>
+          <li>tel: 000-0000-0000</li>
+          <li>url: www.xxxxxx.jp</li>
+          <li>mail: xxx@xxxxxx.jp</li>
+        </ul>
+        <p>
+          プロフィールテキストテキストテキストテキストテキストテキストテキストテキストテキストスト
+          テキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキスト
+          テキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキスト
+        </p>
+      </section>
+
+      <section id="works" class="wrapper">
+        <h2 class="sec-title">Works</h2>
+        <ul>
+          <li><img src="img/works1.jpg" alt="テキストテキストテキスト"></li>
+          <li><img src="img/works2.jpg" alt="テキストテキストテキスト"></li>
+          <li><img src="img/works3.jpg" alt="テキストテキストテキスト"></li>
+          <li><img src="img/works4.jpg" alt="テキストテキストテキスト"></li>
+          <li><img src="img/works5.jpg" alt="テキストテキストテキスト"></li>
+          <li><img src="img/works6.jpg" alt="テキストテキストテキスト"></li>
+        </ul>
+      </section>
+
+      <section id="news" class="wrapper">
+        <h2 class="sec-title">News</h2>
+        <dl>
+          <dt>2020.XX.XX</dt>
+          <dd>デザイン雑誌「ＸＸＸＸＸＸ Vol.11』に掲載していただきました。</dd>
+          <dt>2020.XX.XX</dt>
+          <dd>ＸＸ月ＸＸ日から写真集「ＸＸＸＸＸＸＸ」の販売を開始します。</dd>
+          <dt>2019.XX.XX</dt>
+          <dd>【イベント開催のお知らせ】テキストテキストテキストテキストテキストテキストテキスト</dd>
+          <dt>2019.XX.XX</dt>
+          <dd>デザイン雑誌「ＸＸＸＸＸＸ Vol.10』に掲載していただきました。</dd>
+          <dt>2019.XX.XX</dt>
+          <dd>【個展開催のお知らせ】テキストテキストテキストテキストテキストテキストテキスト</dd>
+        </dl>
+      </section>
+
+      <section id="contact" class="wrapper">
+        <h2 class="sec-title">Contact</h2>
+        <form action="#" method="post">
+          <dl>
+            <dt><label for="name">NAME</label></dt>
+            <dd><input type="text" id="name" name="your-name"></dd>
+            <dt><label for="email">E-mail</label></dt>
+            <dd><input type="email" id="email" name="your-email"></dd>
+            <dt><label for="message">MESSAGE</label></dt>
+            <dd><textarea id="message" name="your-message"></textarea></dd>
+          </dl>
+          <div class="button"><input type="submit" value="送信"></div>
+        </form>
+      </section>
+    </main>
+
+    <footer id="footer">
+      <p>&copy; 2020 My Work</p>
+    </footer>
+
+  </body>
+
 </html>

@@ -1,170 +1,245 @@
 @charset "UTF-8";
-/* 共通部分*/
-html{
-	font-size: 100%;
+
+html {
+  font-size: 100%;
 }
-body{
-	font-family:"Hiragino Kaku Gothic ProN", "Hiragino Sans", "BIZ UDPGothic", sans-serif;
-	line-height: 1.7;
-	color: #432;
+body {
+  color: #24292e;
 }
-a{
-	text-decoration: none;
+a {
+  text-decoration: none;
 }
-img{
-	max-width: 100%;
+img {
+  max-width: 100%;
+}
+li {
+  list-style: none;
 }
 
-/* レイアウト */
-.wrapper{
-	max-width: 1120px;
-	margin: auto;
-	padding: 0 1.5rem;
+.wrapper {
+  max-width: 960px;
+  margin: 0 auto 130px auto;
+  font-size: 0.9rem;
+  padding: 0 4%;
 }
-.align-center{
-	text-align: center;
+.site-title {
+  line-height: 1px;
 }
-
-/* 見出し */
-.font-english{
-	font-family: 'Philosopher', sans-serif;
-	font-weight: normal;
+.site-title a {
+  display: block;
 }
-.page-title,
-.heading-large{
-	font-size: 3rem;
-	text-align: center;
-}
-.page-title{
-	margin-top: 2rem;
-	line-height: 1.4;
-}
-.heading-large{
-	margin-bottom: 1rem;
-}
-/* ボタン */
-.btn{
-	display: inline-block;
-	font-size: 1.5rem;
-	background-color: #0bd;
-	color: #fff;
-	border-radius: 8px;
-	padding: .75rem 1.5rem;
-	transition: .5s;
-}
-.btn:hover{
-	translate: 10px -20px;
-	background-color: #0090aa;
+.sec-title {
+  font-size: 1.5rem;
+  text-align: center;
+  margin-bottom: 65px;
 }
 
-/* ヘッダー*/
-.page-header{
-	padding-top: .5rem;
+/*-------------------------------------------
+ヘッダー
+-------------------------------------------*/
+#header {
+  max-width: 960px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 270px;
+  margin: 0 auto;
+  padding: 0 4%;
 }
-.logo{
-	width: 210px;
+#header ul {
+  display: flex;
+  padding: 10px 0;
 }
-.main-nav {
-	display: flex;
-	justify-content: center;
-	gap: 2.5rem;
-	font-size: 1.5rem;
-	list-style: none;
+#header li {
+  font-size: 0.9rem;
+  margin-left: 30px;
 }
-.main-nav a{
-	color:#432
+#header li a {
+  color: #24292e;
 }
-.main-nav a:hover{
-	color:#0bd;
+#header li a:hover {
+  opacity: 0.7;
 }
-
-/* ヘッダーカバー画像*/
-
-
-/* HOME*/
-.cover{
-	background-size: cover;
-	background-position: center bottom;
-	height: 800px;
-}
-.cover-home{
-	background-image: url(file:///C:/Users/user/Downloads/chapter4/chapter4/images/cover-home-s.webp);
-}
-.about {
-	max-width: 736px;
-	padding: 0 1.5rem;
-	margin: 3rem auto 0;
-}
-.about p {
-	margin-bottom: 3rem;
+#header li img.icon {
+  width: 20px;
 }
 
-/* フッター*/
-.page-footer{
-	background-image: url(file:///C:/Users/user/Downloads/chapter4/chapter4/images/footer-s.webp);
-	background-size: cover;
-	background-position: center;
-	padding-top: 12rem;
+/*-------------------------------------------
+Mainvisual
+-------------------------------------------*/
+#mainvisual {
+  margin-bottom: 80px;
 }
-.info{
-	width: 100%;
-	max-width: 544px;
-	margin: auto;
-	padding: 0 1.5rem;
-	border-spacing: 0;
-}
-.info th,
-.info td{
-	border-bottom: 1px solid #c9c2bc;
-}
-.info th{
-	text-align: left;
-	font-weight: normal;
-	padding: item;
-}
-.info td{
-	padding: 1rem 0;
-}
-.copyright{
-	background-color: #432;
-	text-align: center;
-	padding: 2rem 0;
-	margin-top: 6rem;
-	color: #fff;
-}
-/* デスクトップ版*/
-@media (min-width: 800px) {
-    /* 見出し */
-.page-title{
-	font-size: 5rem;
-}
-.heading-large{
-	font-size: 4rem;
+#mainvisual img {
+  width: 100%;
+  max-width: 1920px;
+  height: 420px;
+  object-fit: cover;
 }
 
-    /* ヘッダー */
-    .page-header{
-		display:flex;
-		justify-content: space-between;
-		padding-top: 1.5rem;
-	}
-.main-nav{
-	font-size: 2rem;
+/*-------------------------------------------
+About
+-------------------------------------------*/
+#about ul {
+  margin-bottom: 30px;
+}
+#about li:first-child {
+  margin-bottom: 30px;
+}
+#about p {
+  text-align:justify;
 }
 
-    /* HOME */
-.page-footer{
-	background-image: url(file:///C:/Users/user/Downloads/chapter4/chapter4/images/cover-home-l.webp);
+/*-------------------------------------------
+Works
+-------------------------------------------*/
+#works ul {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  margin-bottom: 50px;
 }
-.about{
-	margin: 4rem auto 0;
+#works li {
+  width: 31%;
+  margin-bottom: 23px;
 }
-    /* フッター */
-    .page-footer{
-		background-image: url(file:///C:/Users/user/Downloads/chapter4/chapter4/images/footer-l.webp);
-		padding-top: 12rem;
-	}
-	.info th{
-		padding-left: 2.5rem;
-	}
+
+/*-------------------------------------------
+News
+-------------------------------------------*/
+#news dl {
+  display: flex;
+  flex-wrap: wrap;
+  border-top: solid 1px #c8c8c8;
+  margin-bottom: 20px;
+}
+#news dt {
+  width: 20%;
+  border-bottom: solid 1px #c8c8c8;
+  padding: 15px;
+}
+#news dd {
+  width: 80%;
+  border-bottom: solid 1px #c8c8c8;
+  padding: 15px;
+}
+
+/*-------------------------------------------
+Contact
+-------------------------------------------*/
+#contact dl {
+  display: flex;
+  flex-wrap: wrap;
+  margin-bottom: 20px;
+}
+#contact dt {
+  width: 15%;
+}
+#contact dd {
+  width: 85%;
+  margin-bottom: 10px;
+}
+#contact dd input,
+#contact dd textarea {
+  width: 100%;
+  border: solid 1px #c8c8c8;
+  padding: 10px;
+}
+#contact dd textarea {
+  height: 10rem;
+}
+#contact .button {
+  text-align: center;
+}
+#contact .button input {
+  width: 200px;
+  background-color: #24292e;
+  color: #fff;
+  padding: 15px 0;
+  border: solid 1px #24292e;
+}
+#contact .button input:hover {
+  background: #fff;
+  color: #24292e;
+}
+
+/*-------------------------------------------
+フッター
+-------------------------------------------*/
+#footer {
+  background-color: #24292e;
+  color: #fff;
+  font-size: 0.5rem;
+  padding: 10px 20px;
+  text-align: center;
+}
+
+/*-------------------------------------------
+SP
+-------------------------------------------*/
+@media screen and (max-width: 600px) {
+  .wrapper {
+    margin-bottom: 70px;
+  }
+  .site-title {
+    margin-top: 20px;
+  }
+  .sec-title {
+    margin-bottom: 40px;
+  }
+
+  /*-------------------------------------------
+  ヘッダー
+  -------------------------------------------*/
+  #header {
+    max-width: 100%;
+    height: auto;
+    flex-direction: column;
+  }
+  #header li {
+    font-size: 0.8rem;
+    margin-left: 20px;
+  }
+  #header li:first-child {
+    margin-left: 0;
+  }
+
+  /*-------------------------------------------
+  Works
+  -------------------------------------------*/
+  #works ul {
+    flex-direction: column;
+  }
+  #works li {
+    width: 100%;
+  }
+
+  /*-------------------------------------------
+  News
+  -------------------------------------------*/
+  #news dl {
+    flex-direction: column;
+  }
+  #news dt {
+    width: 100%;
+    border-bottom: none;
+    padding-bottom: 0;
+  }
+  #news dd {
+    width: 100%;
+    padding-top: 0;
+  }
+
+  /*-------------------------------------------
+  Contact
+  -------------------------------------------*/
+  #contact dl {
+    flex-direction: column;
+  }
+  #contact dt {
+    width: 100%;
+  }
+  #contact dd {
+    width: 100%;
+  }
 }
