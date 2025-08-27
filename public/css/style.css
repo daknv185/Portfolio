@@ -66,54 +66,57 @@ otamesi
 */
 
 #headerr {
-  position: fixed;   /* 固定 */
-  top: 0;
-  left: 50%;         /* 横中央に固定 */
-  transform: translateX(-50%);
-  width: 100%;
-  background-color: #fff;
-  box-shadow: 0 2px 5px rgba(0,0,0,0.1);
-  z-index: 1000;
+	position: fixed;
+	/* 固定 */
+	top: 0;
+	left: 50%;
+	/* 横中央に固定 */
+	transform: translateX(-50%);
+	width: 100%;
+	background-color: #fff;
+	box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+	z-index: 1000;
 }
 
 .header-inner {
-  max-width: 960px;      /* ヘッダーの最大幅 */
-  width: 100%;
-  display: flex;
-  justify-content: flex-end;  
-  align-items: center;
-  padding: 10px 20px;
-  box-sizing: border-box;
+	max-width: 960px;
+	/* ヘッダーの最大幅 */
+	width: 100%;
+	display: flex;
+	justify-content: flex-end;
+	align-items: center;
+	padding: 10px 20px;
+	box-sizing: border-box;
 }
 
 /* ロゴ */
 .logo {
-  font-size: 24px;
-  font-weight: bold;
+	font-size: 24px;
+	font-weight: bold;
 }
 
 /* メニュー */
 .nav {
-  display: flex;
-  gap: 20px;
+	display: flex;
+	gap: 20px;
 }
 
 .nav a {
-  text-decoration: none;
-  color: #333;
+	text-decoration: none;
+	color: #333;
 }
 
 .nav ul {
-  display: flex;      /* 横並びにする */
-  gap: 20px;          /* li 同士の間隔 */
-  list-style: none;   /* デフォルトの黒丸を消す */
-  margin: 0;
-  padding: 0;
+	display: flex;
+	gap: 20px;
+	list-style: none;
+	margin: 0;
+	padding: 0;
 }
 
 .nav a {
-  text-decoration: none;
-  color: #333;
+	text-decoration: none;
+	color: #333;
 }
 
 
@@ -174,7 +177,7 @@ Mainvisual
 Main
 -------------------------------------------*/
 
-#main{
+#main {
 	padding: 70px 0 0;
 }
 
