@@ -67,6 +67,10 @@ li {
 /*-------------------------------------------
 Mainvisual
 -------------------------------------------*/
+.mainvisual {
+	text-align: center;
+}
+
 #mainvisual {
   margin-bottom: 80px;
 }
