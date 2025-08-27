@@ -65,10 +65,10 @@ li {
 		justify-self: center;
 }
 
-.parent p {
-	margin: 0;
+.btn:hover{
+	background-color: #c8c8c8;
+	transition: .5s;
 }
-
 /*-------------------------------------------
 ヘッダー
 -------------------------------------------*/
