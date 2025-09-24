@@ -6,7 +6,8 @@ html {
 }
 
 body {
-	padding: 10px;
+	margin: 0;
+	padding: 0;
 	color: #24292e;
 }
 
@@ -94,11 +95,10 @@ li {
 }
 
 .header-inner {
-	max-width: 960px;
 	/* ヘッダーの最大幅 */
 	width: 100%;
 	display: flex;
-	justify-content: flex-end;
+	justify-content: center;
 	align-items: center;
 	padding: 10px 20px;
 	box-sizing: border-box;
